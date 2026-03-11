@@ -42,6 +42,7 @@ public class BookingController {
                 .body(ApiResponse.ok("Booking created successfully", bookingService.createBooking(req)));
     }
 
+    // get request
     @GetMapping("/bookings/{bookingId}")
     @Operation(summary = "Get a booking by ID")
     public ResponseEntity<ApiResponse<BookingDto.Response>> getBooking(@PathVariable UUID bookingId) {
