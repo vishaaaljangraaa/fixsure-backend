@@ -19,4 +19,14 @@ public class CategoryDto {
         private String description;
         private String iconUrl;
     }
+
+    @Data
+    @Builder
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class Request {
+        private String name;
+        private String description;
+        private String iconUrl;
+    }
 }

@@ -28,6 +28,31 @@ public class CategoryService {
                 .orElseThrow(() -> new ResourceNotFoundException("Category not found with id: " + id)));
     }
 
+    public CategoryDto.Response createCategory(CategoryDto.Request request) {
+        Category category = Category.builder()
+                .name(request.getName())
+                .description(request.getDescription())
+                .iconUrl(request.getIconUrl())
+                .build();
+        return toResponse(categoryRepository.save(category));
+    }
+
+    public CategoryDto.Response updateCategory(UUID id, CategoryDto.Request request) {
+        Category category = categoryRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Category not found with id: " + id));
+        category.setName(request.getName());
+        category.setDescription(request.getDescription());
+        category.setIconUrl(request.getIconUrl());
+        return toResponse(categoryRepository.save(category));
+    }
+
+    public void deleteCategory(UUID id) {
+        if (!categoryRepository.existsById(id)) {
+            throw new ResourceNotFoundException("Category not found with id: " + id);
+        }
+        categoryRepository.deleteById(id);
+    }
+
     public CategoryDto.Response toResponse(Category category) {
         return CategoryDto.Response.builder()
                 .id(category.getId().toString())

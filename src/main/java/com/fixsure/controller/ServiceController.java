@@ -44,4 +44,23 @@ public class ServiceController {
     public ResponseEntity<ApiResponse<ServiceDto.Detail>> getById(@PathVariable UUID id) {
         return ResponseEntity.ok(ApiResponse.ok(serviceCatalogService.getServiceById(id)));
     }
+
+    @PostMapping
+    @Operation(summary = "Create a new service")
+    public ResponseEntity<ApiResponse<ServiceDto.Detail>> createService(@RequestBody ServiceDto.Request request) {
+        return ResponseEntity.ok(ApiResponse.ok(serviceCatalogService.createService(request)));
+    }
+
+    @PutMapping("/{id}")
+    @Operation(summary = "Update an existing service")
+    public ResponseEntity<ApiResponse<ServiceDto.Detail>> updateService(@PathVariable UUID id, @RequestBody ServiceDto.Request request) {
+        return ResponseEntity.ok(ApiResponse.ok(serviceCatalogService.updateService(id, request)));
+    }
+
+    @DeleteMapping("/{id}")
+    @Operation(summary = "Delete a service")
+    public ResponseEntity<ApiResponse<Void>> deleteService(@PathVariable UUID id) {
+        serviceCatalogService.deleteService(id);
+        return ResponseEntity.ok(ApiResponse.ok(null));
+    }
 }

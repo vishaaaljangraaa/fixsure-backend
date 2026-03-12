@@ -1,5 +1,6 @@
 com\fixsure\entity\Payment.class
 com\fixsure\service\BookingService.class
+com\fixsure\dto\ServiceDto$Request$RequestBuilder.class
 com\fixsure\dto\BookingDto$CreateRequest.class
 com\fixsure\dto\CategoryDto$Response.class
 com\fixsure\entity\Service$ServiceBuilder.class
@@ -24,6 +25,7 @@ com\fixsure\dto\ServiceDto$Summary.class
 com\fixsure\dto\PaymentDto$VerifyRequest$VerifyRequestBuilder.class
 com\fixsure\entity\Technician.class
 com\fixsure\dto\AddressDto$Request.class
+com\fixsure\dto\CategoryDto$Request$RequestBuilder.class
 com\fixsure\entity\Booking.class
 com\fixsure\dto\PaymentDto$RefundRequest$RefundRequestBuilder.class
 com\fixsure\dto\AddressDto$Request$RequestBuilder.class
@@ -34,6 +36,7 @@ com\fixsure\repository\PaymentRepository.class
 com\fixsure\entity\Payment$PaymentBuilder.class
 com\fixsure\dto\AddressDto$Response$ResponseBuilder.class
 com\fixsure\config\CorsConfig.class
+com\fixsure\dto\CategoryDto$Request.class
 com\fixsure\dto\PaymentDto$RefundRequest.class
 com\fixsure\entity\User.class
 com\fixsure\dto\BookingDto$Response$ResponseBuilder.class
@@ -79,5 +82,6 @@ com\fixsure\dto\ServiceDto.class
 com\fixsure\dto\UserDto$Response.class
 com\fixsure\entity\enums\PaymentMethod.class
 com\fixsure\dto\ApiResponse.class
+com\fixsure\dto\ServiceDto$Request.class
 com\fixsure\exception\GlobalExceptionHandler.class
 com\fixsure\dto\AddressDto$Response.class

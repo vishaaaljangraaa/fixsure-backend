@@ -31,4 +31,23 @@ public class CategoryController {
     public ResponseEntity<ApiResponse<CategoryDto.Response>> getById(@PathVariable UUID id) {
         return ResponseEntity.ok(ApiResponse.ok(categoryService.getCategoryById(id)));
     }
+
+    @PostMapping
+    @Operation(summary = "Create a new category")
+    public ResponseEntity<ApiResponse<CategoryDto.Response>> createCategory(@RequestBody CategoryDto.Request request) {
+        return ResponseEntity.ok(ApiResponse.ok(categoryService.createCategory(request)));
+    }
+
+    @PutMapping("/{id}")
+    @Operation(summary = "Update an existing category")
+    public ResponseEntity<ApiResponse<CategoryDto.Response>> updateCategory(@PathVariable UUID id, @RequestBody CategoryDto.Request request) {
+        return ResponseEntity.ok(ApiResponse.ok(categoryService.updateCategory(id, request)));
+    }
+
+    @DeleteMapping("/{id}")
+    @Operation(summary = "Delete a category")
+    public ResponseEntity<ApiResponse<Void>> deleteCategory(@PathVariable UUID id) {
+        categoryService.deleteCategory(id);
+        return ResponseEntity.ok(ApiResponse.ok(null));
+    }
 }

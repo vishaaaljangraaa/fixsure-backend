@@ -43,4 +43,18 @@ public class ServiceDto {
         private Integer reviewCount;
         private List<String> includes;
     }
+
+    @Data
+    @Builder
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class Request {
+        private String categoryId;
+        private String name;
+        private String description;
+        private String imageUrl;
+        private BigDecimal basePrice;
+        private Integer durationMinutes;
+        private List<String> includes;
+    }
 }
