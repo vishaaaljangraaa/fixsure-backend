@@ -5,6 +5,8 @@ C:\Users\rohit\OneDrive\Desktop\fixsure\fixsure-backend\src\main\java\com\fixsur
 C:\Users\rohit\OneDrive\Desktop\fixsure\fixsure-backend\src\main\java\com\fixsure\repository\TimeSlotRepository.java
 C:\Users\rohit\OneDrive\Desktop\fixsure\fixsure-backend\src\main\java\com\fixsure\service\BookingService.java
 C:\Users\rohit\OneDrive\Desktop\fixsure\fixsure-backend\src\main\java\com\fixsure\controller\ServiceController.java
+C:\Users\rohit\OneDrive\Desktop\fixsure\fixsure-backend\src\main\java\com\fixsure\entity\Coupon.java
+C:\Users\rohit\OneDrive\Desktop\fixsure\fixsure-backend\src\main\java\com\fixsure\repository\CouponRepository.java
 C:\Users\rohit\OneDrive\Desktop\fixsure\fixsure-backend\src\main\java\com\fixsure\entity\Service.java
 C:\Users\rohit\OneDrive\Desktop\fixsure\fixsure-backend\src\main\java\com\fixsure\controller\PaymentController.java
 C:\Users\rohit\OneDrive\Desktop\fixsure\fixsure-backend\src\main\java\com\fixsure\repository\UserRepository.java
@@ -36,8 +38,11 @@ C:\Users\rohit\OneDrive\Desktop\fixsure\fixsure-backend\src\main\java\com\fixsur
 C:\Users\rohit\OneDrive\Desktop\fixsure\fixsure-backend\src\main\java\com\fixsure\entity\Address.java
 C:\Users\rohit\OneDrive\Desktop\fixsure\fixsure-backend\src\main\java\com\fixsure\repository\ServiceRepository.java
 C:\Users\rohit\OneDrive\Desktop\fixsure\fixsure-backend\src\main\java\com\fixsure\entity\enums\PaymentStatus.java
+C:\Users\rohit\OneDrive\Desktop\fixsure\fixsure-backend\src\main\java\com\fixsure\service\CouponService.java
+C:\Users\rohit\OneDrive\Desktop\fixsure\fixsure-backend\src\main\java\com\fixsure\controller\CouponController.java
 C:\Users\rohit\OneDrive\Desktop\fixsure\fixsure-backend\src\main\java\com\fixsure\controller\UserController.java
 C:\Users\rohit\OneDrive\Desktop\fixsure\fixsure-backend\src\main\java\com\fixsure\entity\User.java
 C:\Users\rohit\OneDrive\Desktop\fixsure\fixsure-backend\src\main\java\com\fixsure\service\PaymentService.java
 C:\Users\rohit\OneDrive\Desktop\fixsure\fixsure-backend\src\main\java\com\fixsure\controller\BookingController.java
+C:\Users\rohit\OneDrive\Desktop\fixsure\fixsure-backend\src\main\java\com\fixsure\dto\CouponDto.java
 C:\Users\rohit\OneDrive\Desktop\fixsure\fixsure-backend\src\main\java\com\fixsure\repository\TechnicianRepository.java
